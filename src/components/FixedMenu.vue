@@ -1,6 +1,6 @@
 <template>
   <!-- LOGO -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
     <div class="container-fluid">
       <div class="logo">
         <img src="@/assets/logo.png" alt="" />
@@ -148,7 +148,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .logo {
   display: flex;
   align-items: center;
