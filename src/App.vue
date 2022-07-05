@@ -3,6 +3,8 @@
   <FixedMenu />
   <PresentCarousel />
   <SubSlide/>
+  <AboutUs/>
+  <ApplyTable/>
 </template>
 
 <script>
@@ -10,6 +12,8 @@ import TopHeader from "./components/TopHeader.vue";
 import FixedMenu from "./components/FixedMenu.vue";
 import PresentCarousel from "./components/PresentCarousel.vue"
 import SubSlide from "./components/SubSlide.vue"
+import AboutUs from "./components/AboutUs.vue"
+import ApplyTable from "./components/ApplyTable.vue"
 
 export default {
   name: "App",
@@ -17,7 +21,9 @@ export default {
     TopHeader,
     FixedMenu,
     PresentCarousel,
-    SubSlide
+    SubSlide,
+    AboutUs,
+    ApplyTable
   },
 };
 </script>
