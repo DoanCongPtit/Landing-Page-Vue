@@ -5,6 +5,9 @@
   <SubSlide/>
   <AboutUs/>
   <ApplyTable/>
+  <OurCourses/>
+  <OurFacilities/>
+  <FeaturedTeacher/>
 </template>
 
 <script>
@@ -14,6 +17,9 @@ import PresentCarousel from "./components/PresentCarousel.vue"
 import SubSlide from "./components/SubSlide.vue"
 import AboutUs from "./components/AboutUs.vue"
 import ApplyTable from "./components/ApplyTable.vue"
+import OurCourses from "./components/OurCourses.vue"
+import OurFacilities from "./components/OurFacilities.vue"
+import FeaturedTeacher from "./components/FeaturedTeacher.vue"
 
 export default {
   name: "App",
@@ -23,7 +29,10 @@ export default {
     PresentCarousel,
     SubSlide,
     AboutUs,
-    ApplyTable
+    ApplyTable,
+    OurCourses,
+    OurFacilities,
+    FeaturedTeacher
   },
 };
 </script>
