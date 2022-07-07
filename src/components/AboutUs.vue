@@ -2,7 +2,7 @@
   <div class="container">
     <h5 class="about-us">About us</h5>
     <div class="row">
-      <div class="col-6 left-el">
+      <div class="col-md-6 left-el">
         <div class="line"></div>
         <h2 class="main-title">Welcome to Edubin</h2>
         <p class="left-content">
@@ -16,7 +16,7 @@
         </p>
         <button type="button" class="btn">Learn more</button>
       </div>
-      <div class="col-6">
+      <div class="col-md-6">
         <div class="right-el">
           <h3>Upcoming events</h3>
           <div class="list-content">

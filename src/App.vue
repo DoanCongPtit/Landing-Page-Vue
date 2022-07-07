@@ -8,6 +8,7 @@
   <OurCourses/>
   <OurFacilities/>
   <FeaturedTeacher/>
+  <PublicationList/>
 </template>
 
 <script>
@@ -20,6 +21,7 @@ import ApplyTable from "./components/ApplyTable.vue"
 import OurCourses from "./components/OurCourses.vue"
 import OurFacilities from "./components/OurFacilities.vue"
 import FeaturedTeacher from "./components/FeaturedTeacher.vue"
+import PublicationList from "./components/PublicationList.vue"
 
 export default {
   name: "App",
@@ -32,7 +34,8 @@ export default {
     ApplyTable,
     OurCourses,
     OurFacilities,
-    FeaturedTeacher
+    FeaturedTeacher,
+    PublicationList
   },
 };
 </script>

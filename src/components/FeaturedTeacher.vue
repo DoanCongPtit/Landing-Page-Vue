@@ -28,7 +28,35 @@
                 </div>
               </div>
             </div>
-            <div class="col-6">col-4</div>
+            <div class="col-6">
+              <div class="teacher-card">
+                <img src="@/assets/teacher_2.jpg" alt="" />
+                <div class="info">
+                  <h6>Rebeka Alig</h6>
+                  <p>Pro Chancellor</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row bottom-row">
+            <div class="col-6">
+              <div class="teacher-card">
+                <img src="@/assets/teacher_3.jpg" alt="" />
+                <div class="info">
+                  <h6>Hanna Bein</h6>
+                  <p>Aerobics head</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="teacher-card">
+                <img src="@/assets/teacher_4.jpg" alt="" />
+                <div class="info">
+                  <h6>David Card</h6>
+                  <p>Pro Chancellor</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -103,6 +131,7 @@ export default {};
   left: 0;
   right: 0;
   width: 80%;
+  height: 70px;
   background-color: #fff;
   border-radius: 5px;
   margin: 0 auto;
@@ -119,5 +148,8 @@ export default {};
   font-size: 14px;
   color: #8a8a8a;
   text-align: center;
+}
+.bottom-row{
+  margin-top: 20px;
 }
 </style>
