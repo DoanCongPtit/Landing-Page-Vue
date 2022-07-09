@@ -28,7 +28,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            <router-link :to="{ name: 'Index' }"
+              ><a class="nav-link active" aria-current="page" href="#">HOME</a
+              ></router-link
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">PAGES</a>
@@ -164,6 +167,9 @@ export default {
 }
 .navbar-collapse {
   margin-left: 270px;
+}
+.nav-item a {
+  text-decoration: none;
 }
 .nav-item li a {
   font-weight: 600;

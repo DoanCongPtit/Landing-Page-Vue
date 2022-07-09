@@ -2,33 +2,40 @@
   <div class="course-card">
     <div class="main-img">
       <img
-        src="https://thepixelcurve.com/html/edubin/images/course/cu-1.jpg"
+        :src="imageUrl"
         alt=""
       />
     </div>
     <div class="price">
-      <span>Free</span>
+      <span>{{course.price}}</span>
     </div>
     <div class="main-content">
       <div class="rating">
-        <img v-for="index in 5" :key="index" src="@/assets/star.png" alt="" />
-        <span>(20 reviews)</span>
+        <img v-for="rate in course.rate" :key="rate" src="@/assets/star.png" alt="" />
+        <span>({{course.rate_quantity}} reviews)</span>
       </div>
-      <h4>Learn basic javascript from start for beginner</h4>
+      <h4>{{course.name}}</h4>
     </div>
     <div class="teacher">
       <img src="@/assets/teacher_1.jpg" alt="" />
-      <span class="name">Mark Anthem</span>
+      <span class="name">{{course.teacher}}</span>
       <img class="reaction" src="@/assets/user.png" alt="">
-      <span>31</span>
+      <span>{{course.total_enrolled}}</span>
       <img class="reaction" src="@/assets/heart.png" alt="">
-      <span>10</span>
+      <span>{{course.rate_quantity}}</span>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["course"],
+  data() {
+    return {
+      imageUrl: this.course.image,
+    };
+  },
+};
 </script>
 
 <style scoped>
@@ -64,6 +71,7 @@ export default {};
   text-align: center;
 }
 .main-content {
+  height: 130px;
   padding: 0 25px 25px 25px;
   border-bottom: 1px solid #e0e0e0;
 }

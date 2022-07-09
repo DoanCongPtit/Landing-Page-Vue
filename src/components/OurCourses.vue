@@ -6,24 +6,18 @@
       <h2 class="main-title">Featured courses</h2>
       <div class="main-slide">
         <Splide
-            :options="{
-              type: 'loop',
-              perPage: 3,
-              focus: 'center',
-              gap: 10,
-              pagination: false
-            }"
-          >
-            <SplideSlide>
-              <CourseCard />
-            </SplideSlide>
-            <SplideSlide>
-              <CourseCard />
-            </SplideSlide>
-            <SplideSlide>
-              <CourseCard />
-            </SplideSlide>
-          </Splide>
+          :options="{
+            type: 'loop',
+            perPage: 3,
+            focus: 'center',
+            gap: 10,
+            pagination: false,
+          }"
+        >
+          <SplideSlide v-for="course in items" :key="course.id">
+            <CourseCard :course="course"/>
+          </SplideSlide>
+        </Splide>
       </div>
     </div>
   </div>
@@ -32,6 +26,7 @@
 <script>
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
+import axios from "axios";
 import CourseCard from "./CourseCard.vue";
 
 export default {
@@ -40,6 +35,27 @@ export default {
     SplideSlide,
     CourseCard
   },
+  data() {
+    return {
+      items: [],
+    };
+  },
+  created() {
+    this.getData();
+  },
+  methods: {
+    async getData() {
+      try {
+        const response = await axios.get("https://60d4611a61160900173cb070.mockapi.io/courses");
+        this.items = response.data;
+        console.log("/////////////");
+        console.log(JSON.stringify(this.items));
+        console.log("/////////////");
+      } catch (err) {
+        console.log(err);
+      }
+    },
+  }
 };
 </script>
 
@@ -55,8 +71,8 @@ export default {
   margin: 0;
   padding-bottom: 18px;
 }
-.container{
-    padding: 120px 0;
+.container {
+  padding: 120px 0;
 }
 .line {
   width: 35px;
@@ -71,30 +87,29 @@ export default {
   padding-top: 10px;
   font-weight: 700;
 }
-.main-slide{
-    margin-top: 50px;
+.main-slide {
+  margin-top: 50px;
 }
-:deep(.splide__arrow--next){
-    position: relative;
-    float: right;
-    bottom: 50px;
-    left: -70px;
-    border-radius: unset;
-    border-radius: 5px
+:deep(.splide__arrow--next) {
+  position: relative;
+  float: right;
+  bottom: 50px;
+  left: -70px;
+  border-radius: unset;
+  border-radius: 5px;
 }
-:deep(.splide__arrow--prev){
-    position: relative;
-    float: right;
-    bottom: 50px;
-    left: -150px;
-    border-radius: unset;
-    border-radius: 5px
+:deep(.splide__arrow--prev) {
+  position: relative;
+  float: right;
+  bottom: 50px;
+  left: -150px;
+  border-radius: unset;
+  border-radius: 5px;
 }
-:deep(.splide__arrow:hover){
-    background-color: yellow;
+:deep(.splide__arrow:hover) {
+  background-color: yellow;
 }
-:deep(.splide__arrow:hover){
-    background-color: yellow;
+:deep(.splide__arrow:hover) {
+  background-color: yellow;
 }
-
 </style>
