@@ -11,6 +11,9 @@
     <FeaturedTeacher />
     <PublicationList />
     <QuoteCard/>
+    <LatestNews/>
+    <SponsorSlider/>
+    <MainFooter/>
     <a @click="scrollTop" v-show="visible" class="bottom-right scroll-btn">
       <img src="@/assets/scroll.png" alt=""
     /></a>
@@ -29,6 +32,9 @@ import OurFacilities from "./components/OurFacilities.vue";
 import FeaturedTeacher from "./components/FeaturedTeacher.vue";
 import PublicationList from "./components/PublicationList.vue";
 import QuoteCard from "./components/QuoteCard.vue"
+import LatestNews from "./components/LatestNews.vue"
+import SponsorSlider from "./components/SponsorSlider.vue"
+import MainFooter from "./components/MainFooter.vue"
 
 export default {
   name: "App",
@@ -43,7 +49,10 @@ export default {
     OurFacilities,
     FeaturedTeacher,
     PublicationList,
-    QuoteCard
+    QuoteCard,
+    LatestNews,
+    SponsorSlider,
+    MainFooter
   },
   data() {
     return {

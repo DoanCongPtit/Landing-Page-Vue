@@ -20,7 +20,7 @@
         <div class="right-el">
           <h3>Upcoming events</h3>
           <div class="list-content">
-            <img src="@/assets/yellow-cart.png" alt="" />
+            <img src="@/assets/calendar.png" alt="" />
             <span class="timestamp"> 2 December 2018</span>
             <h4>Campus clean workshop</h4>
             <div class="time-location">
@@ -32,7 +32,7 @@
           </div>
 
           <div class="list-content">
-            <img src="@/assets/yellow-cart.png" alt="" />
+            <img src="@/assets/calendar.png" alt="" />
             <span class="timestamp"> 2 December 2018</span>
             <h4>Tech Summit</h4>
             <div class="time-location">
@@ -44,7 +44,7 @@
           </div>
 
           <div class="list-content">
-            <img src="@/assets/yellow-cart.png" alt="" />
+            <img src="@/assets/calendar.png" alt="" />
             <span class="timestamp"> 2 December 2018</span>
             <h4>Environment conference</h4>
             <div class="time-location">

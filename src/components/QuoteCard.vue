@@ -193,6 +193,7 @@ export default {
 
 <style scoped>
 .main {
+  margin-top: 150px;
   position: relative;
   width: 100%;
   height: 560px;
