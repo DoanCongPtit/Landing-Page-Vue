@@ -202,10 +202,10 @@ export default {
 }
 .overlay {
   position: absolute;
-  opacity: 1;
+  opacity: 0.8;
   top: 0;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  background: #07294d; /* Black see-through */
   color: #f1f1f1;
   width: 100%;
   transition: 0.5s ease;

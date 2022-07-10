@@ -57,6 +57,10 @@
       </div>
     </div>
   </div>
+  <div class="bottom-footer">
+    <p>© Copyrights 2020 Edubin All rights reserved. </p>
+    <p>Designed by <span>Pixelcurve</span></p>
+  </div>
 </template>
 
 <script>
@@ -139,5 +143,21 @@ export default {};
 }
 .contact img{
     margin-right: 10px;
+}
+.bottom-footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #021d3a;
+    height: 75px;
+}
+.bottom-footer p{
+    padding: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.bottom-footer span{
+    font-weight: 600;
 }
 </style>
