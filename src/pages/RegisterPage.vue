@@ -1,4 +1,5 @@
 <template>
+<div class="bg-color">
   <TopHeader />
   <FixedMenu />
   <div class="bg">
@@ -13,6 +14,8 @@
   </div>
   <RegisterForm />
   <MainFooter />
+</div>
+  
 </template>
 
 <script>
@@ -31,6 +34,9 @@ export default {
 </script>
 
 <style scoped>
+.bg-color{
+  background-color: #edf0f2;
+}
 .bg {
   position: relative;
   height: 320px;
