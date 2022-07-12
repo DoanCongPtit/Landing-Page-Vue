@@ -2,7 +2,7 @@
   <div class="bg">
     <div class="container main">
       <div class="row">
-        <div class="col-4 overview">
+        <div class="col-md-4 overview">
           <img
             src="https://thepixelcurve.com/html/edubin/images/logo-2.png"
             alt=""
@@ -19,7 +19,7 @@
             <img src="@/assets/instagram-round.png" alt="">
           </div>
         </div>
-        <div class="col-3 sitemap">
+        <div class="col-md-3 sitemap">
             <h6>Sitemap</h6>
             <ul>
                 <li><img src="@/assets/right-arrow.png" alt=""> Home</li>
@@ -36,7 +36,7 @@
                 <li><img src="@/assets/right-arrow.png" alt=""> Contact</li>
             </ul>
         </div>
-        <div class="col-2 support">
+        <div class="col-md-2 support">
             <h6>Support</h6>
             <ul>
                 <li><img src="@/assets/right-arrow.png" alt=""> FAQS</li>
@@ -46,7 +46,7 @@
                 <li><img src="@/assets/right-arrow.png" alt=""> Documentation</li>
             </ul>
         </div>
-        <div class="col-3 contact">
+        <div class="col-md-3 contact">
             <h6>Contact Us</h6>
             <ul>
                 <li><img src="@/assets/home.png" alt="">143 castle road 517 district, kiyev port south Canada</li>
@@ -159,5 +159,16 @@ export default {};
 }
 .bottom-footer span{
     font-weight: 600;
+}
+@media only screen and (max-width: 450px) {
+  .bottom-footer{
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .bottom-footer p{
+    padding: unset;
+}
 }
 </style>

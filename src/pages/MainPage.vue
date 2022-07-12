@@ -106,7 +106,7 @@ export default {
 }
 @media only screen and (max-width: 450px) {
   .scroll-btn{
-    right: 210px;
+    right: 140px;
   }
 }
 </style>

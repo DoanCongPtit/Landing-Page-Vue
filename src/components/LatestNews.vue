@@ -5,12 +5,14 @@
     <h2 class="main-title">From the news</h2>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-6 left-el">
+        <div class="col-md-6 left-el">
           <img
+          class="thumbnail"
             src="https://thepixelcurve.com/html/edubin/images/news/n-1.jpg"
             alt=""
           />
-          <img src="@/assets/calendar.png" alt="" />
+          <div>
+            <img src="@/assets/calendar.png" alt="" />
           <span class="timestamp"> 2 December 2018</span>
           <span class="author">By Adam Linn</span>
           <h3>Tips to grade high cgpa in university life</h3>
@@ -20,17 +22,19 @@
             odio sit amet nibh vulputate cursus a sit amet mauris. Morbi
             accumsan ipsum velit. Nam nec tellus a odio tincidunt .
           </p>
+          </div>
+          
         </div>
-        <div class="col-6">
+        <div class="col-md-6">
           <div class="container-fluid right-el">
             <div class="row">
-              <div class="col-4">
+              <div class="col-md-4">
                 <img
                   src="https://thepixelcurve.com/html/edubin/images/news/ns-1.jpg"
                   alt=""
                 />
               </div>
-              <div class="col-8">
+              <div class="col-md-8">
                 <img src="@/assets/calendar.png" alt="" />
                 <span class="timestamp"> 2 December 2018</span>
                 <span class="author">By Adam Linn</span>
@@ -41,13 +45,13 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-4">
+              <div class="col-md-4">
                 <img
                   src="https://thepixelcurve.com/html/edubin/images/news/ns-2.jpg"
                   alt=""
                 />
               </div>
-              <div class="col-8">
+              <div class="col-md-8">
                 <img src="@/assets/calendar.png" alt="" />
                 <span class="timestamp"> 2 December 2018</span>
                 <span class="author">By Adam Linn</span>
@@ -58,13 +62,13 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-4">
+              <div class="col-md-4">
                 <img
                   src="https://thepixelcurve.com/html/edubin/images/news/ns-3.jpg"
                   alt=""
                 />
               </div>
-              <div class="col-8">
+              <div class="col-md-8">
                 <img src="@/assets/calendar.png" alt="" />
                 <span class="timestamp"> 2 December 2018</span>
                 <span class="author">By Adam Linn</span>
@@ -152,5 +156,14 @@ export default {};
   font-weight: 400;
   line-height: 28px;
   color: #505050;
+}
+@media only screen and (max-width: 450px) {
+  .thumbnail{
+    height: 132px;
+    width: 170px;
+  }
+  .right-el{
+    padding: unset;
+  }
 }
 </style>

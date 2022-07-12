@@ -7,6 +7,12 @@
           perPage: 4,
           arrows: false,
           pagination: false,
+          breakpoints: {
+                450: {
+                  perPage: 2,
+                  arrows: false
+                },
+              },
         }"
       >
         <SplideSlide>

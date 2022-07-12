@@ -9,12 +9,17 @@
         <Splide
           :options="{
             arrows: false,
+            perPage: 2,
+            breakpoints: {
+                450: {
+                  perPage: 1,
+                  arrows: false
+                },
+              },
           }"
         >
           <SplideSlide>
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-6">
+            
                   <div class="container quote-card">
                     <div class="row">
                       <div class="col-4 quote-img">
@@ -37,63 +42,13 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-6">
-                  <div class="container quote-card">
-                    <div class="row">
-                      <div class="col-4 quote-img">
-                        <img
-                          src="https://thepixelcurve.com/html/edubin/images/testimonial/t-2.jpg"
-                          alt=""
-                        />
-                        <div class="icon">
-                          <img src="@/assets/quote.png" alt="" />
-                        </div>
-                      </div>
-                      <div class="col-8">
-                        <p>
-                          Aliquetn sollicitudirem quibibendum auci elit cons
-                          equat ipsutis sem nibh id elit. Duis sed odio sit amet
-                          sem nibh id elit sollicitudirem
-                        </p>
-                        <h6>Rubina Helen</h6>
-                        <span>Bsc, Engineering</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                
+               
+                  
+                
           </SplideSlide>
           <SplideSlide>
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-6">
-                  <div class="container quote-card">
-                    <div class="row">
-                      <div class="col-4 quote-img">
-                        <img
-                          src="https://thepixelcurve.com/html/edubin/images/testimonial/t-1.jpg"
-                          alt=""
-                        />
-                        <div class="icon">
-                          <img src="@/assets/quote.png" alt="" />
-                        </div>
-                      </div>
-                      <div class="col-8">
-                        <p>
-                          Aliquetn sollicitudirem quibibendum auci elit cons
-                          equat ipsutis sem nibh id elit. Duis sed odio sit amet
-                          sem nibh id elit sollicitudirem
-                        </p>
-                        <h6>Rubina Helen</h6>
-                        <span>Bsc, Engineering</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <div class="container quote-card">
+            <div class="container quote-card">
                     <div class="row">
                       <div class="col-4 quote-img">
                         <img
@@ -115,15 +70,9 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
           </SplideSlide>
           <SplideSlide>
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-6">
-                  <div class="container quote-card">
+           <div class="container quote-card">
                     <div class="row">
                       <div class="col-4 quote-img">
                         <img
@@ -145,33 +94,6 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-6">
-                  <div class="container quote-card">
-                    <div class="row">
-                      <div class="col-4 quote-img">
-                        <img
-                          src="https://thepixelcurve.com/html/edubin/images/testimonial/t-1.jpg"
-                          alt=""
-                        />
-                        <div class="icon">
-                          <img src="@/assets/quote.png" alt="" />
-                        </div>
-                      </div>
-                      <div class="col-8">
-                        <p>
-                          Aliquetn sollicitudirem quibibendum auci elit cons
-                          equat ipsutis sem nibh id elit. Duis sed odio sit amet
-                          sem nibh id elit sollicitudirem
-                        </p>
-                        <h6>Rubina Helen</h6>
-                        <span>Bsc, Engineering</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </SplideSlide>
         </Splide>
       </div>
@@ -277,5 +199,10 @@ export default {
 }
 :deep(.splide__pagination) {
   margin-top: 30px;
+}
+@media only screen and (max-width: 450px) {
+  :deep(.splide__track){
+    height: 300px;
+  }
 }
 </style>
