@@ -112,4 +112,11 @@ export default {
 .alert {
   color: red;
 }
+@media only screen and (max-width: 450px) {
+  .form{
+    width: 100%;
+    margin: 100px auto;
+  }
+  
+}
 </style>
