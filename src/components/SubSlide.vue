@@ -69,4 +69,9 @@ h2 {
 :deep(.splide__arrow--prev){
     left: -60px;
 }
+@media only screen and (max-width: 450px) {
+  .sub-slide{
+    margin-top: -80px;
+  }
+}
 </style>

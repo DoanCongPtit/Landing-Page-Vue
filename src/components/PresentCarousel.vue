@@ -7,11 +7,11 @@
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="5000">
         <img
-          src="@/assets/PresentSlide2.jpeg"
+          src="https://thepixelcurve.com/html/edubin/images/slider/s-2.jpg"
           class="d-block w-100"
           alt="..."
         />
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-md-block">
           <h1>Choose the right theme for education</h1>
           <p>
             Donec vitae sapien ut libearo venenatis faucibus. Nullam quis ante.
@@ -26,11 +26,11 @@
       </div>
       <div class="carousel-item" data-bs-interval="5000">
         <img
-          src="@/assets/PresentSlide3.jpeg"
+          src="https://thepixelcurve.com/html/edubin/images/slider/s-1.jpg"
           class="d-block w-100"
           alt="..."
         />
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-md-block">
           <h1>Choose the right theme for education</h1>
           <p>
             Donec vitae sapien ut libearo venenatis faucibus. Nullam quis ante.
@@ -128,5 +128,35 @@ p {
 .btn:hover{
   color: yellow;
   background-color: #07294d;
+}
+@media only screen and (max-width: 450px) {
+  .carousel-caption{
+    left: 5%;
+  }
+  .carousel-control-prev{
+    display: none;
+  }
+  .carousel-control-next{
+    display: none;
+  }
+  .w-100{
+    width: unset !important;
+  }
+  .carousel-caption h1{
+    font-size: 26px;
+    width: 270px;
+  }
+  .carousel-caption p{
+    margin-top: 30px;
+    font-size: 16px;
+    width: 270px;
+  }
+  .btn-action {
+    margin-top: 20px;
+  }
+  .btn-action .btn{
+    font-size: 14px;
+    width: 120px;
+  }
 }
 </style>
