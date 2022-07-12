@@ -1,4 +1,8 @@
 # web-ghtk
+## Deployment
+```
+https://landing-page-vue-eight.vercel.app/
+```
 
 ## Project setup
 ```
