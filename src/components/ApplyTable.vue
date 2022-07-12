@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container main">
     <div class="row">
       <div class="col-6">
         <div class="left-el">
@@ -32,6 +32,9 @@ export default {};
 </script>
 
 <style scoped>
+.main{
+  margin-top: 100px;
+}
 .left-el {
   background-color: #07294d;
   border-top-left-radius: 5px;

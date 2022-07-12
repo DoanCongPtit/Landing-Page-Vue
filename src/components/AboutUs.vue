@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container main">
     <h5 class="about-us">About us</h5>
     <div class="row">
       <div class="col-md-6 left-el">
@@ -71,7 +71,7 @@ export default {};
 </script>
 
 <style scoped>
-.container {
+.main {
   margin-top: 65px;
   height: 600px;
 }

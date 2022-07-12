@@ -104,4 +104,9 @@ export default {
 .scroll-btn img{
   margin-bottom: 15px;
 }
+@media only screen and (max-width: 450px) {
+  .scroll-btn{
+    right: 210px;
+  }
+}
 </style>
