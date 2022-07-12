@@ -148,7 +148,7 @@ export default {};
     display: flex;
     justify-content: space-between;
     background-color: #021d3a;
-    height: 75px;
+    height: 100%;
 }
 .bottom-footer p{
     padding: 25px;

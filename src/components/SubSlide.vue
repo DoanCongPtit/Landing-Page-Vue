@@ -2,17 +2,21 @@
   <div class="sub-slide">
     <div class="container">
       <div class="row">
-        <div class="col-4">
+        <div class="col-md-4">
           <h2>Best platform to learn everything</h2>
         </div>
-        <div class="col-8 slide">
+        <div class="col-md-8 slide">
           <Splide
             :options="{
               type: 'loop',
               perPage: 3,
-              focus: 'center',
               gap: 0,
-              pagination: false
+              pagination: false,
+              breakpoints: {
+                450: {
+                  perPage: 1,
+                },
+              },
             }"
           >
             <SplideSlide>
@@ -62,16 +66,29 @@ h2 {
   margin: 80px 0;
 }
 
-.slide{
+.slide {
   margin: 80px 0;
 }
 
-:deep(.splide__arrow--prev){
-    left: -60px;
+:deep(.splide__arrow--prev) {
+  left: -60px;
 }
 @media only screen and (max-width: 450px) {
-  .sub-slide{
+  .sub-slide {
     margin-top: -80px;
+  }
+  .sub-slide h2 {
+    font-size: 24px;
+    margin: 40px 0;
+  }
+  .slide {
+    margin: unset;
+  }
+  :deep(.splide__arrow--prev) {
+    left: unset;
+  }
+  :deep(.is-active) {
+    text-align: center;
   }
 }
 </style>
