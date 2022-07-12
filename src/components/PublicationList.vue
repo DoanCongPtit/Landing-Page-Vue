@@ -7,7 +7,7 @@
         <h2 class="main-title">From Store</h2>
         <button type="button" class="btn">All Products</button>
       </div>
-      <div class="row">
+      <div class="row list">
         <div class="col-3 card">
           <div class="main-img">
             <img
@@ -322,5 +322,18 @@ export default {};
 }
 .btn-buy img {
   vertical-align: unset;
+}
+@media only screen and (max-width: 450px) {
+ .top-el{
+  display: unset;
+ }
+ .list{
+  margin-top: 20px;
+ }
+ .card{
+  width: 80%;
+  height: 100%;
+  margin-bottom: 20px !important;
+ }
 }
 </style>

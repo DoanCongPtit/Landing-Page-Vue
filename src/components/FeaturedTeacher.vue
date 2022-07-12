@@ -1,7 +1,7 @@
 <template>
   <div class="container main-content">
     <div class="row">
-      <div class="col-5 left-el">
+      <div class="col-md-5 left-el">
         <h5 class="about-us">About us</h5>
         <div class="line"></div>
         <h2 class="main-title">Meet Our teachers</h2>
@@ -16,10 +16,10 @@
         </p>
         <button type="button" class="btn">Career with us</button>
       </div>
-      <div class="col-7">
+      <div class="col-md-7 right-el">
         <div class="container">
           <div class="row">
-            <div class="col-6">
+            <div class="col-md-6">
               <div class="teacher-card">
                 <img src="@/assets/teacher_1.jpg" alt="" />
                 <div class="info">
@@ -28,7 +28,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
               <div class="teacher-card">
                 <img src="@/assets/teacher_2.jpg" alt="" />
                 <div class="info">
@@ -39,7 +39,7 @@
             </div>
           </div>
           <div class="row bottom-row">
-            <div class="col-6">
+            <div class="col-md-6">
               <div class="teacher-card">
                 <img src="@/assets/teacher_3.jpg" alt="" />
                 <div class="info">
@@ -48,7 +48,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
               <div class="teacher-card">
                 <img src="@/assets/teacher_4.jpg" alt="" />
                 <div class="info">
@@ -151,5 +151,13 @@ export default {};
 }
 .bottom-row{
   margin-top: 20px;
+}
+@media only screen and (max-width: 450px) {
+ .right-el{
+   margin-top: 50px;
+ }
+ .teacher-card{
+  margin-bottom: 20px;
+ }
 }
 </style>
