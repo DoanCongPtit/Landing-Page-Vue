@@ -1,7 +1,7 @@
 <template>
   <div class="container main">
     <div class="row">
-      <div class="col-6">
+      <div class="col-md-6">
         <div class="left-el">
           <h3>Apply for fall 2019</h3>
           <p>
@@ -12,7 +12,7 @@
           <button type="button" class="btn">Apply now</button>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-md-6">
         <div class="right-el">
           <h3>Apply for scholarship</h3>
           <p>
@@ -34,6 +34,7 @@ export default {};
 <style scoped>
 .main{
   margin-top: 100px;
+  
 }
 .left-el {
   background-color: #07294d;

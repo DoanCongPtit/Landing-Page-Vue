@@ -169,4 +169,12 @@ h4:hover {
   height: 400px;
   width: 400px;
 }
+@media only screen and (max-width: 450px) {
+  .main{
+    height: 1000px;
+  }
+  .right-el{
+    margin-top: 30px;
+  }
+}
 </style>

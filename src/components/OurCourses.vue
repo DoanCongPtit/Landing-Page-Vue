@@ -12,6 +12,12 @@
             focus: 'center',
             gap: 10,
             pagination: false,
+            breakpoints: {
+                450: {
+                  perPage: 1,
+                  arrows: false
+                },
+              },
           }"
         >
           <SplideSlide v-for="course in items" :key="course.id">
@@ -111,5 +117,11 @@ export default {
 }
 :deep(.splide__arrow:hover) {
   background-color: yellow;
+}
+@media only screen and (max-width: 450px) {
+  .container{
+    padding-top: 50px;
+    margin-left: 20px;
+  }
 }
 </style>

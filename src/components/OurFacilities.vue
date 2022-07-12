@@ -2,7 +2,7 @@
   <div class="main-content">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-6">
+        <div class="col-md-6 left-el">
           <div class="btn">
             <a
               class="pop-up"
@@ -12,7 +12,7 @@
             /></a>
           </div>
         </div>
-        <div class="col-6 left-el">
+        <div class="col-md-6 right-el">
           <div class="feature">
             <h3>Our Facilities</h3>
             <div class="feature-card">
@@ -78,7 +78,9 @@ export default {};
 .main-content {
   width: 100%;
   height: 700px;
+  background-repeat: no-repeat;
   background-image: url("https://thepixelcurve.com/html/edubin/images/bg-1.jpg");
+  background-size: auto 100%;
 }
 .btn {
   margin-top: 200px;
@@ -95,7 +97,7 @@ export default {};
 .btn img {
   vertical-align: unset;
 }
-.left-el {
+.right-el {
   height: 700px;
   background-color: #07294d !important;
   opacity: 0.8;
@@ -120,5 +122,31 @@ export default {};
   font-weight: 400;
   line-height: 28px;
   color: #fff;
+}
+@media only screen and (max-width: 450px) {
+  .main-content{
+    height: 890px;
+    position: relative;
+  }
+  .feature{
+    padding: unset !important;
+    opacity: 0.8;
+  }
+  .left-el{
+    position: absolute;
+    z-index: 2;
+    bottom: 20px;
+  }
+  .right-el{
+    background-color: unset !important;
+  }
+  .container-fluid{
+    background-color: #07294d !important;
+    height: 100%;
+    opacity: 0.8;
+  }
+  h3{
+    margin-top: 50px;
+  }
 }
 </style>
